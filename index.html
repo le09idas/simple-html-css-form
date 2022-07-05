@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chaos Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Chaos Affinity Survey Form</h1>
+    <p id="description">This form shall be used to discern which god of Chaos you allign with and what you would wish to accomplish under their graces.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: 
+          <input id="name" type="text" required placeholder="Your daemonic name"/></label>
+        <label id="name-disclaim" class="disclaim">
+          Please refrain from using any crude epithets you have received from
+          either friend or victim as this is a family-friendly survey.
+        </label>
+        <label id="email-label">E-Mail: 
+          <input id="email" type="email" required placeholder="Your daemonic email"/></label>
+        <label id="email-disclaim" class="disclaim">
+          WARNING: We do not accept any domains containing the following names:
+        </label>
+        <ul id="email-disclaim-list">
+          <li>Sigmar</li>
+          <li>Khaine</li>
+          <li>Ariel</li>
+          <li>Mork or Gork</li>
+          <li>Grungi</li>
+          <li>Sotek</li>
+          <li>Ursun</li>
+          <li>TheGreatMaw</li>
+          <li>Any of the Dragon Emperors</li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Number of Souls You Have Corrupted/Killed/Seduced/Deceieved: 
+          <input id="number" type="number" required placeholder="Enter amount of souls" min="10" max="100000000000000000"/>
+        </label>
+        <label id="dropdown-label">Chaos God Allegience</label>
+        <select id="dropdown">
+          <option value="">(choose your allegience)</option>
+          <option value="1">Blood for the Blood God!</option>
+          <option value="2">The Grandfather</option>
+          <option value="3">The Dark Prince</option>
+          <option value="4">The Changer of Ways</option>
+          <option value="5">The Horned Rat, Yes-yes!</option>
+        </select>
+        <label id="dropdown-disclaim" class="disclaim">Leave unchosen if you follow the Everchosen.</label>
+        <label id="checkbox-label">Indicate if you have done any of the following:</label>
+        <label><input type="checkbox" value="khornate"> Slain more than 100 persons in a single battle</label>
+        <label><input type="checkbox" value="nurgling"> Refused to bathe for a fortnight after each battle in which you partook</label>
+        <label><input type="checkbox" value="slaaneshi"> Convinced about 10 percent of an enemy force to join your side in return for giving them a key to infinite pleasure</label>
+        <label><input type="checkbox" value="tzeentchian"> Machinated a rebellion, proxy war, or political betrayal without being discovered</label>
+        <label><input type="checkbox" value="skaven"> Are a rat</label>
+        <label><input type="checkbox" value="skaven"> Defected from an Order Tide nation</label>
+        <label><input type="checkbox" value="skaven"> Joined Skaven in a Vermintide</label>
+        <label><input type="checkbox" value="skaven"> Crossed planes of existence serving any of the Chaos gods</label>
+      </fieldset>
+      <fieldset>
+        <label>
+        Please indicate which level of devotion you would 
+        like to achieve in about 10 years' time:
+      </label>
+        <label><input type="radio" name="devotion-level" value="devotee"/> Devotee</label>
+        <label><input type="radio" name="devotion-level" value="acolyte"/> Acolyte</label>
+        <label><input type="radio" name="devotion-level" value="herald"/> Herald</label>
+        <label><input type="radio" name="devotion-level" value="great-daem"/> Greater Daemon</label>
+      </fieldset>
+      <label id="comments-label">Please add anything you think was not accurately capture from this form or if it was not captured at all. This survey is an ever changing (not everchosen) document that will inevitably be changed.</label>
+      <textarea id="comments" rows="15" cols="40" placeholder="please type any unholy manifestations you have performed that is not indicated above..."></textarea>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+<html>
