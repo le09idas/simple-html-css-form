@@ -1,24 +1,85 @@
+body {
+  background-color: rgb(68, 80, 109);
+  width: 60vw;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+  font-family: fantasy;
+  font-weight: lighter;
+}
+
 h1, p {
   margin: 1em auto;
   text-align: center;
+  color: rgb(14, 9, 9);
+}
+
+fieldset {
+  color: rgb(14, 9, 9);
+  background-color: rgb(80, 95, 109);
+  border-style: dotted;
+  border-color: rgb(70, 80, 50);
+	padding: 2rem 0;
 }
 
 label {
   display: block;
-	margin: 0.5rem 0;
+  width: unset;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0 0.5em 0 0;
+  color: rgb(14, 9, 9);
+}
+
+label[name="checkbox"] {
+  width: unset;
+  display: block;
+  text-align: unset;
+  padding: 10px 10px;
+  margin: 0 0.5em 0 0;
+  color: rgb(90, 47, 47);
+}
+
+input {
+  width: 90%;
+  margin: 10px 0 0 0;
+  color: rgb(70, 80, 50);
+  background-color: rgb(80, 95, 109);
+}
+
+input[type="checkbox"] {
+  margin: 0 0;
+  width: unset;
+}
+
+input[type="radio"] {
+  margin: 0 0;
+  width: unset;
 }
 
 input[type="submit"] {
   display: block;
 	margin: 0.5rem 0;
+  width: 100%;
 }
+
+select {
+  background-color: rgb(70, 80, 50);
+  min-height: 2em;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
 
 textarea {
   display: block;
   margin: auto auto;
-
+  color: rgb(70, 80, 50);
+  background-color: rgb(80, 95, 109);
 }
 
 .disclaim {
-  font-size: 10px;
+  font-size: 12px;
 }
